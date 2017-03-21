@@ -30,3 +30,13 @@
 #
 # for item in d['food']:
 #     print(item)
+
+
+story = ("Cosette and {confidant} were walking in {placetowalk}. It was {timeofday}, "
+          "but Cosette was sad. She said, \"I want a new hat\".".format(**vars()))
+print(story)
+
+print [Thing.name for Thing in Thing.listof]
+print [Person.name for Person in Person.listof]
+
+print ', '.join(cosette.names)
