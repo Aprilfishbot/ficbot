@@ -29,4 +29,4 @@ print(story)
 print [Thing.name for Thing in Thing.listof]
 print [Person.name for Person in Person.listof]
 
-print ', '.join(cosette.names)
+print ", ".join(cosette.names)
