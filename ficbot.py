@@ -49,7 +49,7 @@ def a_expresses_desire(config):
 
 def b_suggests_seamstress(config):
     return '"I know just the person," said {config.confidant.name}. "Her name is {config.seamstress.name}. ' \
-           'She will make you a lovely {config.garment.name}.'.format(
+           'She will make you a lovely {config.garment.name}."'.format(
         **vars()
     )
 
