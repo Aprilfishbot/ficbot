@@ -7,19 +7,6 @@ class Thing(object):
         self.gender = gender
         Thing.listof.append(self)
 
-    def getname(self):
-        return self.name
-
-    def isperson(self):
-        return self.person
-
-    def getgender(self):
-        return self.gender
-
-    def synonyms(self):
-        return self.names
-
-
     @property
     def posessive(self):
         return self.name + "'s"

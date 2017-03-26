@@ -1,104 +1,75 @@
 import random
-import datetime
-from datetime import timedelta
-import radar
+from ficbot_initialise import config
+from sentence_builder import describe_surroundings
 
 
-from actions import Action
-from facts import Fact, Opinion
-from inanimate import Inanimate
-from people import Person
-from settings import Place, timeofday
-from states import State
-from things import Thing
+"""
+CONSTRUCT THE STORY
+"""
 
-from actions_available import *
-from inanimate_available import *
-from people_available import *
-from settings_available import *
-from states_available import *
-from things_available import *
+current_time = config.story_start_time
 
 
 
-#BITS THAT CAN GO ANYWHERE
-## Cosette thinks about Marius
 
-## Cosette thinks about anything really
+def garment_story(config):
+    return "{} {} {}".format(
+        garment_desire_expressed(config)
+        , garment_ordering(config)
+        , garment_collection(config)
+    )
 
-## Description of the surroundings in political terms
-## BasicSceneSetting
+def garment_desire_expressed(config):
+    walking = a_and_b_are_walking(config)
+    want = a_forms_desire(config)
+    says = a_expresses_desire(config)
+    suggestion = b_suggests_seamstress(config)
 
-def describe_surroundings(time, place):
-    current_weather = random.choice(Weather.listof)
-    current_timeofday = timeofday(time)
-    description = 'It was a {current_weather.name} {current_timeofday}'.format(**vars())
-    if random.random()<0.3:
-        return '{}.'.format(description)
-    else:
-        return '{}; {}.'.format(description, 'and so ends the sentence')
+    return "{walking} {want} {says} {suggestion}".format(
+        **vars()
+    )
 
+def a_and_b_are_walking(config):
+    exposit = "{config.protagonist.name} and {config.confidant.name} were walking in {config.story_start_place.name}.".format(**vars())
+    describe = describe_surroundings(current_time, config.story_start_place.name)
+    sentences = " ".join([exposit, describe])
+    return "{sentences}".format(
+        **vars()
+    )
 
-## Cosette remembers?
+def a_forms_desire(config):
+    return "{config.protagonist.name} wanted a {config.garment.name}.".format(
+        **vars()
+    )
 
+def a_expresses_desire(config):
+    return '"I want a {config.garment.name}," said {config.protagonist.name}.'.format(
+        **vars()
+    )
 
+def b_suggests_seamstress(config):
+    return '"I know just the person," said {config.confidant.name}. "Her name is {config.seamstress.name}. ' \
+           'She will make you a lovely {config.garment.name}.'.format(
+        **vars()
+    )
 
-# -- Cosette and her confidant go for a walk. the revolution has succeeded
-## pick random date between June 7th 1832 and December 31st 1832
-story_start_time = radar.random_date (
-    start = datetime.datetime(year=1832, month = 6, day = 7),
-    stop = datetime.datetime (year = 1832, month = 12, day =31)
-)
+def garment_ordering(config):
+    return "So they ordered a {config.garment.name}.".format(
+        **vars()
+    )
 
-print story_start_time
+def garment_collection(config):
+    return "And then they picked it up.".format(
+        **vars()
+    )
 
-if story_start_time.hour <8:
-    story_start_time = story_start_time + timedelta(hours = 8)
+"""
+PUT IT ALL TOGETHER
+"""
 
-if story_start_time.hour>20:
-    story_start_time = story_start_time - timedelta(hours=8)
-
-current_time = story_start_time
-
-
-## pick the place where they're walking
-
-current_place = random.choice(Place.listof)
-print current_place.name
-
-
-## pick her confidant
-
-confidant = random.choice(household)
-
-## >DescribeSurroundings
-
-print describe_surroundings(story_start_time,current_place)
-
-# -- Cosette wants a garment
-## pick random garment
-
-## pick reason
-
-## > FormOpinion (want garment)
-
-## > Speech (want garment)
-
-
-
-# -- Her confidant gives advice as to where to go to get a garment.
-## if confidant = marius then 'my friend knows' etc
-
-## if confidant = valjean or toussaint then 'one of marius' strange friends knows' etc
-
-# -- It's either 1) Musichetta or 2) BLM
-## pick random seamstress
-
-
-# -- They go to visit the seamstress
-# -- Cosette describes her garment
-# -- They agree a timeframe
-# M: Musichetta sends Cosette on [A Romantic Adventure]
-# B: The Laughing Mistress sends Cosette on [A Political Adventure]
-# Cosette returns to pick up the garment
-#
+if random.random() <0.9:
+    story = garment_story(config)
+else:
+    story = "skating story placeholder"
+        #skating(config)
+print story
