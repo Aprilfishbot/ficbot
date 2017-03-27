@@ -19,3 +19,17 @@ class Mood(State):
     def __init__(self, name, names = '', positivity = 0.5):
         State.__init__(self, name, names, positivity)
         Mood.listof.append(self)
+
+
+class Judgement(State):
+    listof = []
+    def __init__(self, name, names = '', positivity = 0.5):
+        State.__init__(self, name, names, positivity)
+        Judgement.listof.append(self)
+
+
+class Description(State):
+    listof = []
+    def __init__(self, name, names = '', positivity = 0.5):
+        State.__init__(self, name, names, positivity)
+        Description.listof.append(self)
