@@ -3,9 +3,14 @@ from things import Thing
 
 class Inanimate(Thing):
     listof = []
-    def __init__(self, name, names):
+    def __init__(self, name, names, pluralised = 's', plural = 's'):
         Thing.__init__(self, name, names)
         Inanimate.listof.append(self)
+        self.pluralised = pluralised
+        if plural == 's':
+            self.plural = name + 's'
+        else:
+            self.plural = plural
 
 class Garment(Inanimate):
     listof = []
