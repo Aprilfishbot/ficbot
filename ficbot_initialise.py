@@ -65,4 +65,7 @@ seamstress = random.choice(seamstresses)
 """
 INITIALISE TO CONFIG
 """
-config = Config(protagonist, confidant, seamstress, story_start_place, story_start_time, garment)
+def create_config(seed):
+    random.seed(seed)
+    config = Config(protagonist, confidant, seamstress, story_start_place, story_start_time, garment)
+    return config

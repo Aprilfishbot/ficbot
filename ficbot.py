@@ -1,11 +1,14 @@
 import random
-from ficbot_initialise import config
+import datetime
+from ficbot_initialise import create_config
 from sentence_builder import describe_surroundings
+
 
 
 """
 CONSTRUCT THE STORY
 """
+config = create_config(datetime.datetime.now())
 
 current_time = config.story_start_time
 
