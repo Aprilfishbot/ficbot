@@ -66,10 +66,10 @@ def garment_collection(config):
 """
 PUT IT ALL TOGETHER
 """
-
-if random.random() <0.9:
-    story = garment_story(config)
-else:
-    story = "skating story placeholder"
+def tell_story():
+    if random.random() <0.9:
+        return garment_story(config)
+    else:
+        return "skating story placeholder"
         #skating(config)
-print story
+print tell_story()
