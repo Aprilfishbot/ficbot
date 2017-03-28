@@ -8,22 +8,18 @@ from sentence_builder import describe_surroundings
 """
 CONSTRUCT THE STORY
 """
-config = create_config(datetime.datetime.now())
-
-current_time = config.story_start_time
-
-
 
 
 def garment_story(config):
+    current_time = config.story_start_time
     return "{} {} {}".format(
-        garment_desire_expressed(config)
+        garment_desire_expressed(config, current_time)
         , garment_ordering(config)
         , garment_collection(config)
     )
 
-def garment_desire_expressed(config):
-    walking = a_and_b_are_walking(config)
+def garment_desire_expressed(config, current_time):
+    walking = a_and_b_are_walking(config, current_time)
     want = a_forms_desire(config)
     says = a_expresses_desire(config)
     suggestion = b_suggests_seamstress(config)
@@ -32,7 +28,7 @@ def garment_desire_expressed(config):
         **vars()
     )
 
-def a_and_b_are_walking(config):
+def a_and_b_are_walking(config, current_time):
     exposit = "{config.protagonist.name} and {config.confidant.name} were walking in {config.story_start_place.name}.".format(**vars())
     describe = describe_surroundings(current_time, config.story_start_place.name)
     sentences = " ".join([exposit, describe])
@@ -70,6 +66,8 @@ def garment_collection(config):
 PUT IT ALL TOGETHER
 """
 def tell_story():
+    config = create_config(datetime.datetime.now())
+
     if random.random() <0.9:
         return garment_story(config)
     else:
