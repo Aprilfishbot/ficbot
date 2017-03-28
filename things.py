@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: latin-1 -*-
+from __future__ import unicode_literals
 class Thing(object):
     listof = []
     def __init__(self, name, names=None, person=0, gender=None):

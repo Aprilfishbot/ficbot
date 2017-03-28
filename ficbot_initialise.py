@@ -1,7 +1,11 @@
+#!/usr/bin/python
+# -*- coding: latin-1 -*-
+from __future__ import unicode_literals
 import random
 import datetime
 from datetime import timedelta
 import radar
+
 
 
 from actions import Action
@@ -61,7 +65,8 @@ def create_config(seed):
 
     # pick a seamstress
 
-    seamstress = random.choice(seamstresses)
+
+    seamstress = random.choice(create_seamstresses())
 
 
     config = Config(protagonist, confidant, seamstress, story_start_place, story_start_time, garment)
