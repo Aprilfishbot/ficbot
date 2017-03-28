@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: latin-1 -*-
+from __future__ import unicode_literals
 from states import State, Weather, Mood, Judgement, Description
 
 Weather('sunny', '', 1)
