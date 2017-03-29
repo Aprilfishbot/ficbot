@@ -74,10 +74,10 @@ def they_were_busy(config, current_time):
     ago = random.choice(sentences)
     rare = rare_treat()
 
-    if config.protagonist == people_available.cosette:
+    if random.random()<0.5:
         busy = "{rare} {ago}, {config.protagonist.name} and {config.confidant.name} had been rushed off their feet.".format(**vars())
     else:
-        busy = "{rare} {ago}, {config.protagonist.name} had hardly had a moment to himself.".format(**vars())
+        busy = "{rare} {ago}, {config.protagonist.name} had hardly had a moment to {config.protagonist.pronoun_obj}self.".format(**vars())
 
     return "{busy}\n".format(**vars())
 
@@ -98,7 +98,7 @@ def a_expresses_desire(config):
     )
 
 def b_suggests_seamstress(config):
-    return '"I know just the person," said {config.confidant.name}. "Her name is {config.seamstress.name}.' \
+    return '"I know just the person," said {config.confidant.name}. "Her name is {config.seamstress.name}. ' \
            'She will make you a lovely {config.garment.name}."\n'.format(
         **vars()
     )
