@@ -194,7 +194,7 @@ def cosette_wants_a_dress(config):
     return random.choice(dresswantingsentences).substitute()
 
 def ami_want_convo(config):
-    conversationsentences = [Template('I''m going to need a ${garment} for Marius'' wedding, you know," said ${protagonist}')]
+    conversationsentences = [Template('I''m going to need a new ${garment} for Marius'' wedding, you know," said ${protagonist}')]
     return random.choice(conversationsentences).substitute(garment = config.garment.name, protagonist = config.protagonist.name)
 
 
