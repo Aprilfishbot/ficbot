@@ -40,8 +40,13 @@ class Config(object):
 INITIALISE TO CONFIG
 """
 def create_config(seed):
-    ## pick a random date somewhere between bd and the end of the year
     random.seed(seed)
+    random.shuffle(amis)
+    random.shuffle(household)
+    seamstresses = create_seamstresses()
+    random.shuffle(seamstresses)
+
+    ## pick a random date somewhere between bd and the end of the year
     story_start_time = radar.random_date(
         start=datetime.datetime(year=1832, month=6, day=7),
         stop=datetime.datetime(year=1832, month=12, day=31)
@@ -55,19 +60,25 @@ def create_config(seed):
 
     story_start_place = random.choice(Place.listof)
 
-    ## pick her confidant
+    ## pick a protagonist
+    if random.random() < 0.8:
+        protagonist = cosette
+    else:
+        protagonist = amis[0]
 
-    confidant = random.choice(household)
+    ## pick a confidant
+    if protagonist == cosette:
+        confidant = random.choice(household)
+    else:
+        confidant = amis[1]
 
     ## pick a garment
-
-    garment = random.choice(Garment.listof)
-
+    if protagonist.gender == 'F':
+        garment = random.choice([x for x in Garment.listof if x.gender == 'F'])
+    else:
+        garment = random.choice([x for x in Garment.listof if x.gender == 'M'])
     # pick a seamstress
-
-
-    seamstress = random.choice(create_seamstresses())
-
+    seamstress = seamstresses[0]
 
     config = Config(protagonist, confidant, seamstress, story_start_place, story_start_time, garment)
     return config

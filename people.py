@@ -6,7 +6,7 @@ from things import Thing
 class Person(Thing):
     listof = []
     def __init__(self, name, names, gender=None):
-        Thing.__init__(self, name, names, gender)
+        Thing.__init__(self, name, names, gender, 1)
         Person.listof.append(self)
 
 

@@ -15,10 +15,10 @@ class Inanimate(Thing):
         else:
             self.plural = plural
 
-class Garment(Inanimate):
+class Garment(Thing):
     listof = []
-    def __init__(self, name, names, elements):
-        Inanimate.__init__(self, name, names)
+    def __init__(self, name, names, elements, gender = 'F'):
+        Thing.__init__(self, name, names)
         Garment.listof.append(self)
         self.elements = list(elements)
-
+        self.gender = gender
