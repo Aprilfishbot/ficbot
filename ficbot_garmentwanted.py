@@ -18,8 +18,6 @@ def garment_wanted(config, current_time):
     says = a_expresses_desire(config)
     suggestion = b_suggests_seamstress(config)
 
-    garment_wanted_intimacy = 0
-
     return "{walking} {want} {says} {suggestion} \n".format(
         **vars()
     )
@@ -130,6 +128,7 @@ def much_to_do(config):
     return random.choice(expression_of_urgency).substitute(always=random.choice(["always ", ""])
                                                            ,still=random.choice(['still ', '']))
 
+
 def wedding_mention(config):
     if config.protagonist == peeps.cosette:
         weddingsentences = ["But amidst all this, Cosette was anxious to be married."]
@@ -140,13 +139,84 @@ def wedding_mention(config):
     return random.choice(weddingsentences)
 
 def a_expresses_desire(config):
-    return '"I want a {config.garment.name}," said {config.protagonist.name}.\n'.format(
+    if config.protagonist == peeps.cosette:
+        conversation_want = cosette_want_convo(config)
+    elif config.protagonist in set(config.household):
+        conversation_want = ""
+    else:
+        conversation_want = ami_want_convo(config)
+    return '{conversation_want}.\n'.format(
         **vars()
     )
+
+def cosette_want_convo(config):
+    if config.confidant == peeps.marius:
+        if random.random()<0.8:
+            proposal = cosette_proposes_marriage(config)
+        else:
+            proposal = marius_proposes_marriage(config)
+        discussion = cosette_discusses_marriage(config)
+        return "{proposal} {discussion}".format(**vars())
+    else:
+        return cosette_wants_a_dress(config)
+
+def cosette_proposes_marriage(config):
+    proposalsentence = random.choice([Template('"My darling,", said Cosette, "When are you going to marry me?"')]
+                                     ).substitute()
+    reactionsentence = random.choice([Template('Marius laughed. "I thought it was I who should be asking that," '
+                                            'he said. "But perhaps that''s another relic of the past. And anyway'
+                                            ', I was going to bring it up myself. How about the Sunday after next? '
+                                            'I think we''re all free."')]
+                                      ).substitute()
+    return "{proposalsentence} {reactionsentence}".format(**vars())
+
+
+def marius_proposes_marriage(config):
+    proposalsentence = random.choice([Template('"My darling," said Marius, '
+                                               '"would you like to marry me a week on Sunday?"')]
+                                     ).substitute()
+    return "{proposalsentence}".format(**vars())
+
+def cosette_discusses_marriage(config):
+    cosetteaccepts = random.choice([Template('Cosette couldn''t help smiling. "Why, of course," she said. '
+                                             '"How does one do these things?"')]
+                                   ).substitute()
+    mariusresponds = random.choice([Template('"I really have no idea," said Marius. "I was going to ask Courfeyrac for help. '
+                                    'I suppose you''ll need a dress."')]
+                                   ).substitute()
+    dresswants = random.choice([Template('"Oh yes," said Cosette. If there was one thing she knew about getting married, '
+                                'it was that it certainly involved a dress.')]
+                               ).substitute()
+    return "{cosetteaccepts} {mariusresponds} {dresswants}".format(**vars())
+
+def cosette_wants_a_dress(config):
+    dresswantingsentences = [Template('Cosette took a deep breath. "I am getting married," she said, "and I need a dress."'),]
+    return random.choice(dresswantingsentences).substitute()
+
+def ami_want_convo(config):
+    conversationsentences = [Template('I''m going to need a ${garment} for Marius'' wedding, you know," said ${protagonist}')]
+    return random.choice(conversationsentences).substitute(garment = config.garment.name, protagonist = config.protagonist.name)
 
 
 def b_suggests_seamstress(config):
-    return '"I know just the person," said {config.confidant.name}. "Her name is {config.seamstress.name}. ' \
-           'She will make you a lovely {config.garment.name}."\n'.format(
-        **vars()
-    )
+    if config.confidant == peeps.bahorel and config.seamstress.name != "Musichetta":
+        sentence = random.choice([Template('"Well," said Bahorel, "That should be easy. ${mistress} can rustle '
+                                           'you up a ${garment} in no time."')
+                                 ,])
+    elif config.seamstress.name =="Musichetta" and config.confidant in set(peeps.joly, peeps.bossuet):
+        sentence = random.choice([Template('"Well," said ${confidant}, "Musichetta can make you one. '
+                                           'She''s quite busy, but always happy to help a friend."')
+                                 ,])
+    elif config.confidant == peeps.marius:
+        sentence = random.choice([Template('"Well," said ${confidant}, "We''re in luck. '
+                                           'My friend''s, er, lady acquaintance does sewing and things. I think her name''s'
+                                           '${seamstress} or something like that."')
+                                 ,])
+    else:
+        sentence = random.choice([Template('"My dear," said ${confidant}, "Of course you do. '
+                                           'Why not get it made by that friend of Marius''? The lady who came around'
+                                           'the other day, what was her name, ${seamstress}."')
+                                 ,])
+    return sentence.substitute(confidant = config.confidant.name
+                               , seamstress = config.seamstress.name)
+

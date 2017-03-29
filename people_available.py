@@ -26,7 +26,7 @@ def create_seamstresses():
                        'Mathilde',u'Océane','Charlotte','Marie',u'Noémie','Celia','Anna',
                        'Nina','Pauline','Agathe','Elena','Leane',u'Éloïse',u'Émilie','Yasmine',
                        'Faustine','Sara','Gabrielle','Anaelle','Sofia','Capucine']
-    laughingmistress = Person(random.choice(frenchgirlnames), '', 'F')
+    laughingmistress= Person(random.choice(frenchgirlnames), '', 'F')
     musichetta = Person('Musichetta', '', 'F')
     #these are the people who can make clothes
     seamstresses = [musichetta, laughingmistress]
