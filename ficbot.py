@@ -5,12 +5,11 @@ from __future__ import unicode_literals
 import random
 import datetime
 from datetime import date
+from string import Template
 from ficbot_initialise import create_config
-from sentence_builder import describe_surroundings
+from sentence_builder import describe_surroundings, substitute_dict
 import people_available
-
-
-
+import actions_available as acts
 
 """
 CONSTRUCT THE STORY
@@ -37,11 +36,11 @@ def garment_desire_expressed(config, current_time):
     )
 
 def a_and_b_are_walking(config, current_time):
-    walkinglist = ['were walking in', 'were going for a stroll in', 'were taking the air in']
-    walking = random.choice(walkinglist)
-    exposit = "{config.protagonist.name} and {config.confidant.name} were walking in {config.story_start_place.name}.".format(**vars())
+    walked = random.choice(acts.walked_pl.names)
+    exposit = "{config.protagonist.name} and {config.confidant.name} {walked} in {config.story_start_place.name}.".format(**vars())
     describe = describe_surroundings(current_time, config.story_start_place.name)
-    sentencelist = [exposit, describe]
+    busy = they_were_busy(config, current_time)
+    sentencelist = [exposit, describe, busy]
     random.shuffle(sentencelist)
     sentences = " ".join(sentencelist)
     return "{sentences}\n".format(
@@ -104,9 +103,9 @@ def b_suggests_seamstress(config):
     )
 
 def garment_ordering(config):
-    return "So they ordered a {config.garment.name}.".format(
-        **vars()
-    )
+    outline = Template("${protagonist} ordered a ${garment}.")
+    subs = substitute_dict(config.__dict__)
+    return outline.substitute(subs)
 
 def garment_collection(config):
     return "And then they picked it up.".format(

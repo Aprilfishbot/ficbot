@@ -5,7 +5,7 @@ import random
 import datetime
 from datetime import timedelta
 import radar
-
+import collections
 
 from actions import Action
 from facts import Fact, Opinion
@@ -47,3 +47,13 @@ def further_description(time, place):
     return 'the {object_name} {verb} {description_chosen.name}'.format(**vars())
 # TO DO: Change this so that instead a new list is created using random.sample and elements are iteratively selected from the list using pop()
 # this should also change the issue with repeating descriptions
+
+def substitute_dict(dictionary_objects):
+    dictionary_names = []
+    for k, v in dictionary_objects.items():
+        if isinstance( v, Thing):
+            dictionary_names.append((k, v.name))
+        else:
+            dictionary_names.append((k, v))
+    return dict(dictionary_names)
+
