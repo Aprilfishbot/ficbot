@@ -17,6 +17,7 @@ Inanimate('revolution','','s')
 
 Garment("morning dress", "", "sleeves, tippet, collar, skirts, ruffles, belt")
 Garment("evening gown", "", "sleeves, neckline, skirts, ruffles, sash, skirt-trim")
+weddingdress=Garment("dress","", "sleeves, tippet, collar, skirts, ruffles, belt")
 Garment("mantle", "", "hood, cape-collar, lining, trim")
 Garment("bonnet", "", "brim, trim, ribbons, lining")
 Garment("coat", "", "sleeves, lapels", 'M')
