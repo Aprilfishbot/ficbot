@@ -203,7 +203,7 @@ def b_suggests_seamstress(config):
         sentence = random.choice([Template('"Well," said Bahorel, "That should be easy. ${mistress} can rustle '
                                            'you up a ${garment} in no time."')
                                  ,])
-    elif config.seamstress.name =="Musichetta" and config.confidant in set(peeps.joly, peeps.bossuet):
+    elif config.seamstress.name =="Musichetta" and config.confidant in set([peeps.joly, peeps.bossuet]):
         sentence = random.choice([Template('"Well," said ${confidant}, "Musichetta can make you one. '
                                            'She''s quite busy, but always happy to help a friend."')
                                  ,])

@@ -9,6 +9,7 @@ from string import Template
 from ficbot_initialise import create_config
 from ficbot_sentence_builder import describe_surroundings, substitute_dict
 from ficbot_garmentwanted import garment_wanted
+from ficbot_garmentordering import  garment_ordering
 import people_available
 import actions_available as acts
 
@@ -27,12 +28,6 @@ def garment_story(config):
         **vars()
     )
 
-
-def garment_ordering(config):
-    outline = Template("${protagonist} ordered a ${garment}.")
-    subs = substitute_dict(config.__dict__)
-    return outline.substitute(subs)
-
 def garment_collection(config):
     return "And then they picked it up.".format(
         **vars()
@@ -44,7 +39,7 @@ PUT IT ALL TOGETHER
 def tell_story():
     config = create_config(datetime.datetime.now())
 
-    if random.random() <1:
+    if random.random() <2:
         return garment_story(config)
     else:
         return "skating story placeholder"
