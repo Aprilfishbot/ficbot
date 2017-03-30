@@ -50,7 +50,6 @@ def wild_goose_chase(config):
     errand_receiver = goose_people[0]
     errand_sender = config.seamstress
     Doodad.listof = Doodad.listof*2
-    random.shuffle(Doodad.listof)
     doodad = Doodad.listof[0]
     if doodad.pluralised == 's': indexical = 'this'
     else:

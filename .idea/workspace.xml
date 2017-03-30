@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="277ca0af-6169-490d-ace2-fcbf0b4316eb" name="Default" comment="typo corrected, also popped first person who receives a package so that they don't reappear">
+    <list default="true" id="277ca0af-6169-490d-ace2-fcbf0b4316eb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ficbot_garmentordering.py" afterPath="$PROJECT_DIR$/ficbot_garmentordering.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ficbot_garmentwanted.py" afterPath="$PROJECT_DIR$/ficbot_garmentwanted.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,7 +32,20 @@
     <favorites_list name="ficbot" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ficbot_garmentordering.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ficbot_garmentordering.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="51" column="35" lean-forward="false" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+              <folding>
+                <element signature="e#44#83#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -79,8 +91,8 @@
         <option value="$PROJECT_DIR$/people_available.py" />
         <option value="$PROJECT_DIR$/ficbot_garmentobtained.py" />
         <option value="$PROJECT_DIR$/ficbot.py" />
-        <option value="$PROJECT_DIR$/ficbot_garmentordering.py" />
         <option value="$PROJECT_DIR$/ficbot_garmentwanted.py" />
+        <option value="$PROJECT_DIR$/ficbot_garmentordering.py" />
       </list>
     </option>
   </component>
@@ -595,7 +607,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490916890176</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="typo corrected, also popped first person who receives a package so that they don't reappear">
+      <created>1490918065345</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1490918065345</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView">
@@ -609,10 +628,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="23" width="1369" height="837" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32885906" sideWeight="0.5116805" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32885906" sideWeight="0.48831952" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32885906" sideWeight="0.48831952" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26845637" sideWeight="0.49133384" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.49736246" order="7" side_tool="false" content_ui="tabs" />
@@ -689,7 +709,8 @@
     <MESSAGE value="updates to story" />
     <MESSAGE value="LOTS of updates, plus added html tags for site" />
     <MESSAGE value="wrapping in markup object to deliver html" />
-    <option name="LAST_COMMIT_MESSAGE" value="wrapping in markup object to deliver html" />
+    <MESSAGE value="typo corrected, also popped first person who receives a package so that they don't reappear" />
+    <option name="LAST_COMMIT_MESSAGE" value="typo corrected, also popped first person who receives a package so that they don't reappear" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1105,8 +1126,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ficbot_garmentordering.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="54" column="15" lean-forward="true" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="15" />
+        <state relative-caret-position="223">
+          <caret line="51" column="35" lean-forward="false" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
           <folding>
             <element signature="e#44#83#0" expanded="true" />
           </folding>
