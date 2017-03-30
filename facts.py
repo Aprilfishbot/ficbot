@@ -4,6 +4,8 @@ from __future__ import unicode_literals
 from things import Thing
 from actions import Action
 
+# ~*~*~*~*~*~*I never used these but whatever*~*~*~*~*~*~
+
 class Fact(Thing):
     def __init__(self, subjectof, objectof, verb):
         listof = []

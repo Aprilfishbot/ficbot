@@ -6,6 +6,7 @@ from things import Thing
 
 class Inanimate(Thing):
     listof = []
+
     def __init__(self, name, names, pluralised = 's', plural = 's'):
         Thing.__init__(self, name, names)
         Inanimate.listof.append(self)
@@ -17,8 +18,19 @@ class Inanimate(Thing):
 
 class Garment(Thing):
     listof = []
+
     def __init__(self, name, names, elements, gender = 'F'):
         Thing.__init__(self, name, names)
         Garment.listof.append(self)
         self.elements = list(elements)
         self.gender = gender
+
+
+class Doodad(Thing):
+    listof = []
+
+    def __init__(self, name, names, reasons, pluralised='s'):
+        Thing.__init__(self, name, names)
+        self.reasons = reasons
+        self.pluralised = pluralised
+        Doodad.listof.append(self)

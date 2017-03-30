@@ -47,7 +47,7 @@ def create_config(seed):
     random.seed(seed)
     random.shuffle(amis)
     random.shuffle(household)
-    seamstresses = create_seamstresses()
+    name_laughingmistress(laughingmistress)
     random.shuffle(seamstresses)
 
     ## pick a random date somewhere between bd and the end of the year
@@ -65,7 +65,7 @@ def create_config(seed):
     story_start_place = random.choice(Place.listof)
 
     ## pick a protagonist
-    if random.random() < 0:
+    if random.random() < 0.3:
         protagonist = cosette
     else:
         protagonist = amis[0]
