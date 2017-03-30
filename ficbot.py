@@ -10,6 +10,7 @@ from ficbot_initialise import create_config
 from ficbot_sentence_builder import describe_surroundings, substitute_dict
 from ficbot_garmentwanted import garment_wanted
 from ficbot_garmentordering import  garment_ordering
+from ficbot_garmentobtained import garment_collection
 import people_available
 import actions_available as acts
 
@@ -28,10 +29,6 @@ def garment_story(config):
         **vars()
     )
 
-def garment_collection(config):
-    return "And then they picked it up.".format(
-        **vars()
-    )
 
 """
 PUT IT ALL TOGETHER
@@ -39,7 +36,7 @@ PUT IT ALL TOGETHER
 def tell_story():
     config = create_config(datetime.datetime.now())
 
-    if random.random() <2:
+    if random.random() < 1.8:
         return garment_story(config)
     else:
         return "skating story placeholder"
