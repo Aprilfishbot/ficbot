@@ -25,20 +25,24 @@ from things_available import *
 
 
 class Config(object):
-    def __init__(self, protagonist, confidant, seamstress, story_start_place, story_start_time, garment):
+    def __init__(self, protagonist, confidant, seamstress, story_start_place, story_start_time, garment
+                 , amis, household, seamstresses):
         self.protagonist = protagonist
         self.confidant = confidant
         self.seamstress = seamstress
         self.story_start_place = story_start_place
         self.story_start_time = story_start_time
         self.garment = garment
-
-
+        self.amis = amis
+        self.household = household
+        self.seamstresses = seamstresses
 
 
 """
 INITIALISE TO CONFIG
 """
+
+
 def create_config(seed):
     random.seed(seed)
     random.shuffle(amis)
@@ -61,7 +65,7 @@ def create_config(seed):
     story_start_place = random.choice(Place.listof)
 
     ## pick a protagonist
-    if random.random() < 0.8:
+    if random.random() < 0:
         protagonist = cosette
     else:
         protagonist = amis[0]
@@ -69,6 +73,14 @@ def create_config(seed):
     ## pick a confidant
     if protagonist == cosette:
         confidant = random.choice(household)
+    elif protagonist == marius:
+        confidant = random.choice(household + [courfeyrac])
+    elif protagonist == courfeyrac:
+        amis.pop(0)
+        amis.append(marius)
+        random.shuffle(amis)
+        amis.insert(0,courfeyrac)
+        confidant = amis[1]
     else:
         confidant = amis[1]
 
@@ -80,5 +92,6 @@ def create_config(seed):
     # pick a seamstress
     seamstress = seamstresses[0]
 
-    config = Config(protagonist, confidant, seamstress, story_start_place, story_start_time, garment)
+    config = Config(protagonist, confidant, seamstress, story_start_place, story_start_time, garment
+                    , amis, household, seamstresses)
     return config
