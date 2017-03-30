@@ -13,6 +13,7 @@ from ficbot_garmentordering import  garment_ordering
 from ficbot_garmentobtained import garment_collection
 import people_available
 import actions_available as acts
+from flask import Markup
 
 
 """
@@ -25,9 +26,7 @@ def garment_story(config):
     want = garment_wanted(config, current_time)
     order = garment_ordering(config)
     collect = garment_collection(config)
-    return "<markup>{want} {order} {collect}</markup>".format(
-        **vars()
-    )
+    return Markup("{want} {order} {collect}".format(**vars()))
 
 
 """
