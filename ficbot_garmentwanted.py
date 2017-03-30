@@ -130,7 +130,7 @@ def much_to_do(config):
                                                            ,still=random.choice(['still ', '']))
     to_do = ''
     x_to_y = [{'x': 'children', 'y': 'educated'}
-                , {'x': 'sick', 'y': 'nursed'}
+                , {'x': 'sick people', 'y': 'nursed'}
                 , {'x': 'gardens', 'y': 'tended'}
                 , {'x': 'streets', 'y': 'cleaned'}
                 , {'x': 'families', 'y': 'fed'}

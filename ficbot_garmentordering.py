@@ -46,7 +46,7 @@ def wild_goose_chase(config):
         goose_people.remove(config.protagonist)
     if config.confidant in goose_people:
         goose_people.remove(config.confidant)
-
+    random.shuffle(goose_people)
     errand_receiver = goose_people[0]
     errand_sender = config.seamstress
     Doodad.listof = Doodad.listof*2
@@ -56,8 +56,8 @@ def wild_goose_chase(config):
     else:
         indexical = 'these'
     reason = random.choice(doodad.reasons)
-    sentence = '<p>Could you take these {indexical} {doodad.name} to {errand_receiver.name}? {reason} </p>"\n'.format(**vars())
-    random.shuffle(goose_people)
+    sentence = '<p>Could you take these {indexical} {doodad.name} to {errand_receiver.name}? {reason}" </p>\n'.format(**vars())
+
     i = 0
     while errand_receiver != config.seamstress:
         speaker = random.choice([config.protagonist, config.confidant])
