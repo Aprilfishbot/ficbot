@@ -1,18 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="277ca0af-6169-490d-ace2-fcbf0b4316eb" name="Default" comment="updates to story">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ficbot_garmentobtained.py" />
+    <list default="true" id="277ca0af-6169-490d-ace2-fcbf0b4316eb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/facts.py" afterPath="$PROJECT_DIR$/facts.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ficbot.py" afterPath="$PROJECT_DIR$/ficbot.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ficbot_garmentordering.py" afterPath="$PROJECT_DIR$/ficbot_garmentordering.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ficbot_garmentwanted.py" afterPath="$PROJECT_DIR$/ficbot_garmentwanted.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ficbot_initialise.py" afterPath="$PROJECT_DIR$/ficbot_initialise.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inanimate.py" afterPath="$PROJECT_DIR$/inanimate.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inanimate_available.py" afterPath="$PROJECT_DIR$/inanimate_available.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/people.py" afterPath="$PROJECT_DIR$/people.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/people_available.py" afterPath="$PROJECT_DIR$/people_available.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,8 +36,8 @@
       <file leaf-file-name="ficbot.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ficbot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+            <state relative-caret-position="153">
+              <caret line="27" column="53" lean-forward="false" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
               <folding>
                 <element signature="e#44#83#0" expanded="true" />
               </folding>
@@ -107,11 +98,11 @@
         <option value="$PROJECT_DIR$/inanimate_available.py" />
         <option value="$PROJECT_DIR$/ficbot_initialise.py" />
         <option value="$PROJECT_DIR$/people.py" />
-        <option value="$PROJECT_DIR$/ficbot.py" />
         <option value="$PROJECT_DIR$/people_available.py" />
         <option value="$PROJECT_DIR$/ficbot_garmentwanted.py" />
         <option value="$PROJECT_DIR$/ficbot_garmentordering.py" />
         <option value="$PROJECT_DIR$/ficbot_garmentobtained.py" />
+        <option value="$PROJECT_DIR$/ficbot.py" />
       </list>
     </option>
   </component>
@@ -605,7 +596,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490898141361</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="LOTS of updates, plus added html tags for site">
+      <created>1490916083387</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1490916083387</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -622,7 +620,7 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5116805" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32885906" sideWeight="0.5116805" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32885906" sideWeight="0.48831952" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26845637" sideWeight="0.49133384" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -698,7 +696,8 @@
     <MESSAGE value="changes to enrich main story engine" />
     <MESSAGE value="updates to story, also changed it so that courfeyrac has marius among his friends and vice-versa" />
     <MESSAGE value="updates to story" />
-    <option name="LAST_COMMIT_MESSAGE" value="updates to story" />
+    <MESSAGE value="LOTS of updates, plus added html tags for site" />
+    <option name="LAST_COMMIT_MESSAGE" value="LOTS of updates, plus added html tags for site" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1114,8 +1113,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ficbot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        <state relative-caret-position="153">
+          <caret line="27" column="53" lean-forward="false" selection-start-line="27" selection-start-column="53" selection-end-line="27" selection-end-column="53" />
           <folding>
             <element signature="e#44#83#0" expanded="true" />
           </folding>
