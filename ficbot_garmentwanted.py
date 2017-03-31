@@ -237,13 +237,13 @@ def b_suggests_seamstress(config):
                                            'She\'s quite busy, but always happy to help a friend."</p>')
                                  ,])
     elif config.confidant == peeps.marius:
-        sentence = random.choice([Template('<p>"Well," said ${confidant}, "We''re in luck. '
-                                           'My friend''s, er, lady acquaintance does sewing and things. I think her name''s'
+        sentence = random.choice([Template('<p>"Well," said ${confidant}, "We\'re in luck. '
+                                           'My friend\'s, er, lady acquaintance does sewing and things. I think her name\'s'
                                            '${seamstress} or something like that."</p>')
                                  ,])
     elif config.confidant in set(peeps.household):
         sentence = random.choice([Template('<p>"My dear," said ${confidant}, "Of course you do. '
-                                           'Why not get it made by that friend of Marius''? The lady who came around'
+                                           'Why not get it made by that friend of Marius\'? The lady who came around'
                                            'the other day, what was her name, ${seamstress}."</p>')
                                  ,])
     else:
