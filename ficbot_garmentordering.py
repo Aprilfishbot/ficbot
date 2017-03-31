@@ -59,7 +59,7 @@ def wild_goose_chase(config):
     reason = random.choice(doodad.reasons)
     sentence = '<p>Could you take these {indexical} {doodad.name} to {errand_receiver.name}? {reason}" </p>\n'.format(**vars())
 
-    i = 0
+    i = 1
     while errand_receiver != config.seamstress:
         speaker = random.choice([config.protagonist, config.confidant])
         affirmation = random.choice(['Of course', 'No problem', 'You can count on us'])
