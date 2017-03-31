@@ -46,9 +46,9 @@ def wild_goose_chase(config):
         goose_people.remove(config.protagonist)
     if config.confidant in goose_people:
         goose_people.remove(config.confidant)
-    if config.seamstress in goose_people: #I mean she should be but it's good to check
-        goose_people.remove(config.seamstress)
     random.shuffle(goose_people)
+    while goose_people[0] == config.seamstress:
+        random.shuffle(goose_people) #otherwise she sends a message to herself
     errand_receiver = goose_people[0]
     errand_sender = config.seamstress
     Doodad.listof = Doodad.listof*2
