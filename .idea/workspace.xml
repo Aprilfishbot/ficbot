@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="277ca0af-6169-490d-ace2-fcbf0b4316eb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ficbot.py" afterPath="$PROJECT_DIR$/ficbot.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inanimate_available.py" afterPath="$PROJECT_DIR$/inanimate_available.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/states_available.py" afterPath="$PROJECT_DIR$/states_available.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ficbot$ficbot.coverage" NAME="ficbot Coverage Results" MODIFIED="1490919221429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ficbot$ficbot.coverage" NAME="ficbot Coverage Results" MODIFIED="1490955546928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -36,8 +37,8 @@
       <file leaf-file-name="ficbot.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ficbot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="163">
+              <caret line="31" column="3" lean-forward="true" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -77,13 +78,11 @@
         <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/settings_available.py" />
         <option value="$PROJECT_DIR$/states.py" />
-        <option value="$PROJECT_DIR$/states_available.py" />
         <option value="$PROJECT_DIR$/things_available.py" />
         <option value="$PROJECT_DIR$/things.py" />
         <option value="$PROJECT_DIR$/actions_available.py" />
         <option value="$PROJECT_DIR$/facts.py" />
         <option value="$PROJECT_DIR$/inanimate.py" />
-        <option value="$PROJECT_DIR$/inanimate_available.py" />
         <option value="$PROJECT_DIR$/ficbot_initialise.py" />
         <option value="$PROJECT_DIR$/people.py" />
         <option value="$PROJECT_DIR$/people_available.py" />
@@ -91,6 +90,8 @@
         <option value="$PROJECT_DIR$/ficbot_garmentordering.py" />
         <option value="$PROJECT_DIR$/ficbot_garmentwanted.py" />
         <option value="$PROJECT_DIR$/ficbot.py" />
+        <option value="$PROJECT_DIR$/states_available.py" />
+        <option value="$PROJECT_DIR$/inanimate_available.py" />
       </list>
     </option>
   </component>
@@ -647,7 +648,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490919450138</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="added some line breaks for clarity between sections">
+      <created>1490920083753</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1490920083753</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView">
@@ -746,7 +754,8 @@
     <MESSAGE value="typo corrections" />
     <MESSAGE value="corrected an issue where the seamstress could send the protagonist out with a package intended for the seamstress herself" />
     <MESSAGE value="corrected yet another duplicated-people problem with the goose chase" />
-    <option name="LAST_COMMIT_MESSAGE" value="corrected yet another duplicated-people problem with the goose chase" />
+    <MESSAGE value="added some line breaks for clarity between sections" />
+    <option name="LAST_COMMIT_MESSAGE" value="added some line breaks for clarity between sections" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1072,14 +1081,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/states_available.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/facts.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1122,16 +1123,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inanimate_available.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-          <folding>
-            <element signature="e#44#83#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inanimate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
@@ -1160,10 +1151,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/inanimate_available.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="46" lean-forward="false" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/states_available.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="27" column="35" lean-forward="true" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ficbot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="163">
+          <caret line="31" column="3" lean-forward="true" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
           <folding />
         </state>
       </provider>
