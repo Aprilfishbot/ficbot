@@ -69,7 +69,7 @@ def wild_goose_chase(config):
                                     , 'They chatted to one another as they took the'
                                   ])
         additional_sentence = '<p>"{affirmation}," said {speaker.name}.</p> <p>{movement} {doodad.name} to ' \
-                              '{errand_receiver.name}. {errand_receiver.comment}</p>\n'.format(
+                              '{errand_receiver.name}.{errand_receiver.comment}</p>\n'.format(
             **vars())
         errand_sender = errand_receiver
         errand_receiver = goose_people[i]

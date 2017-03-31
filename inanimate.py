@@ -22,7 +22,7 @@ class Garment(Thing):
     def __init__(self, name, names, elements, gender = 'F'):
         Thing.__init__(self, name, names)
         Garment.listof.append(self)
-        self.elements = list(elements)
+        self.elements = elements
         self.gender = gender
 
 

@@ -9,7 +9,7 @@ cosette = Person('Cosette', '', 'F')
 
 ########## HOUSEHOLD
 
-valjean = Person('Valjean', '', 'M', 'Somehow he had seemed much more relaxed since June, although he wouldn\'t explain why.')
+valjean = Person('Valjean', '', 'M', ' Somehow he had seemed much more relaxed since June, although he wouldn\'t explain why.')
 marius = Person('Marius', '', 'M')
 toussaint = Person('Toussaint', '', 'F')
 
@@ -20,13 +20,13 @@ household = [valjean, marius, toussaint]
 ######### SEAMSTRESSES
 
 musichetta = Person('Musichetta', '', 'F')
-laughingmistress= Person('Charlotte', '', 'F', 'Her merry laugh was infectious.')
+laughingmistress= Person('Charlotte', '', 'F', ' Her merry laugh was infectious.')
 #these are the people who can make clothes
 seamstresses = [musichetta, laughingmistress]
 
 
 def name_laughingmistress(lm):
-    frenchgirlnames = ['Inès','Lola','Camille','Sarah','Louise','Lilou','Lena',u'Maëlys',
+    frenchgirlnames = ['Inès','Lola','Camille','Sarah','Louise','Lilou',u'Maëlys',
                        'Clara','Eva','Lina',u'Anaïs','Louna','Romane','Juliette','Lucie',
                        'Ambre','Alice','Lou','Lisa',u'Clémence','Jeanne','Louane',
                        'Mathilde',u'Océane','Charlotte','Marie',u'Noémie','Celia','Anna',
@@ -44,7 +44,7 @@ courfeyrac = Person('Courfeyrac', '', 'M')
 bahorel = Person('Bahorel', '', 'M')
 bossuet = Person('Bossuet', 'Lesgle', 'M')
 joly = Person('Joly', '', 'M')
-grantaire = Person('Grantaire', '', 'M', 'Since the revolution, he had really sorted his life out.')
+grantaire = Person('Grantaire', '', 'M', ' Since the revolution, he had really sorted his life out.')
 
 
 amis = [enjolras, combeferre, prouvaire, feuilly, courfeyrac, bahorel, bossuet, joly, grantaire]
