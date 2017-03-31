@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="277ca0af-6169-490d-ace2-fcbf0b4316eb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ficbot_garmentwanted.py" afterPath="$PROJECT_DIR$/ficbot_garmentwanted.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ficbot.py" afterPath="$PROJECT_DIR$/ficbot.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,26 +33,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ficbot_garmentordering.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ficbot_garmentordering.py">
+      <file leaf-file-name="ficbot.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ficbot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="73" column="21" lean-forward="true" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
-              <folding>
-                <element signature="e#44#83#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ficbot_garmentwanted.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ficbot_garmentwanted.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="246" column="79" lean-forward="false" selection-start-line="246" selection-start-column="79" selection-end-line="246" selection-end-column="79" />
-              <folding>
-                <element signature="e#44#83#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="148">
+              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -102,9 +88,9 @@
         <option value="$PROJECT_DIR$/people.py" />
         <option value="$PROJECT_DIR$/people_available.py" />
         <option value="$PROJECT_DIR$/ficbot_garmentobtained.py" />
-        <option value="$PROJECT_DIR$/ficbot.py" />
         <option value="$PROJECT_DIR$/ficbot_garmentordering.py" />
         <option value="$PROJECT_DIR$/ficbot_garmentwanted.py" />
+        <option value="$PROJECT_DIR$/ficbot.py" />
       </list>
     </option>
   </component>
@@ -654,7 +640,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490919297811</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="corrected yet another duplicated-people problem with the goose chase">
+      <created>1490919450138</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1490919450138</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1139,21 +1132,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ficbot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="35" column="36" lean-forward="false" selection-start-line="35" selection-start-column="36" selection-end-line="35" selection-end-column="36" />
-          <folding>
-            <element signature="e#44#83#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/inanimate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
           <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ficbot_garmentwanted.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="239" column="20" lean-forward="false" selection-start-line="239" selection-start-column="20" selection-end-line="239" selection-end-column="20" />
+          <folding>
+            <element signature="e#44#83#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1167,13 +1160,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ficbot_garmentwanted.py">
+    <entry file="file://$PROJECT_DIR$/ficbot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="246" column="79" lean-forward="false" selection-start-line="246" selection-start-column="79" selection-end-line="246" selection-end-column="79" />
-          <folding>
-            <element signature="e#44#83#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="148">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
