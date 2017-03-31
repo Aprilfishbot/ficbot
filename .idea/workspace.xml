@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="277ca0af-6169-490d-ace2-fcbf0b4316eb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ficbot_garmentordering.py" afterPath="$PROJECT_DIR$/ficbot_garmentordering.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ficbot_garmentwanted.py" afterPath="$PROJECT_DIR$/ficbot_garmentwanted.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,11 +33,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ficbot_garmentordering.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ficbot_garmentordering.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ficbot_garmentordering.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="67" column="82" lean-forward="true" selection-start-line="67" selection-start-column="82" selection-end-line="67" selection-end-column="82" />
+            <state relative-caret-position="333">
+              <caret line="73" column="21" lean-forward="true" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
+              <folding>
+                <element signature="e#44#83#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ficbot_garmentwanted.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ficbot_garmentwanted.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="246" column="79" lean-forward="false" selection-start-line="246" selection-start-column="79" selection-end-line="246" selection-end-column="79" />
               <folding>
                 <element signature="e#44#83#0" expanded="true" />
               </folding>
@@ -91,8 +103,8 @@
         <option value="$PROJECT_DIR$/people_available.py" />
         <option value="$PROJECT_DIR$/ficbot_garmentobtained.py" />
         <option value="$PROJECT_DIR$/ficbot.py" />
-        <option value="$PROJECT_DIR$/ficbot_garmentwanted.py" />
         <option value="$PROJECT_DIR$/ficbot_garmentordering.py" />
+        <option value="$PROJECT_DIR$/ficbot_garmentwanted.py" />
       </list>
     </option>
   </component>
@@ -635,7 +647,14 @@
       <option name="project" value="LOCAL" />
       <updated>1490918789800</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="corrected yet another duplicated-people problem with the goose chase">
+      <created>1490919297811</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1490919297811</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TodoView">
@@ -733,7 +752,8 @@
     <MESSAGE value="typo corrected, also popped first person who receives a package so that they don't reappear" />
     <MESSAGE value="typo corrections" />
     <MESSAGE value="corrected an issue where the seamstress could send the protagonist out with a package intended for the seamstress herself" />
-    <option name="LAST_COMMIT_MESSAGE" value="corrected an issue where the seamstress could send the protagonist out with a package intended for the seamstress herself" />
+    <MESSAGE value="corrected yet another duplicated-people problem with the goose chase" />
+    <option name="LAST_COMMIT_MESSAGE" value="corrected yet another duplicated-people problem with the goose chase" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1137,20 +1157,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ficbot_garmentwanted.py">
+    <entry file="file://$PROJECT_DIR$/ficbot_garmentordering.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="135" column="47" lean-forward="true" selection-start-line="135" selection-start-column="47" selection-end-line="135" selection-end-column="47" />
+        <state relative-caret-position="333">
+          <caret line="73" column="21" lean-forward="true" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
           <folding>
             <element signature="e#44#83#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ficbot_garmentordering.py">
+    <entry file="file://$PROJECT_DIR$/ficbot_garmentwanted.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="67" column="82" lean-forward="true" selection-start-line="67" selection-start-column="82" selection-end-line="67" selection-end-column="82" />
+        <state relative-caret-position="334">
+          <caret line="246" column="79" lean-forward="false" selection-start-line="246" selection-start-column="79" selection-end-line="246" selection-end-column="79" />
           <folding>
             <element signature="e#44#83#0" expanded="true" />
           </folding>
