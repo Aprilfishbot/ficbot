@@ -99,10 +99,10 @@ def a_forms_desire(config, current_time):
 
 
 def expression_of_intimacy(config):
-    intimate_moments = [Template("${protagonist} touched ${confidant}'s arm${adjective}. ${comment}")
-                        , Template("${protagonist} took ${confidant} by the arm${adjective}. ${comment}")
-                        , Template("${protagonist} took ${confidant}'s hand${adjective}. ${comment}")
-                        , Template("${protagonist} looked at ${confidant}${adjective}. ${comment}")
+    intimate_moments = [Template("${protagonist} touched ${confidant}'s arm${adjective}.${comment}")
+                        , Template("${protagonist} took ${confidant} by the arm${adjective}.${comment}")
+                        , Template("${protagonist} took ${confidant}'s hand${adjective}.${comment}")
+                        , Template("${protagonist} looked at ${confidant}${adjective}.${comment}")
                         ]
     return random.choice(intimate_moments).substitute(protagonist=config.protagonist.name
                                                       , confidant=config.confidant.name

@@ -36,8 +36,7 @@ def seamstress_greeting(config):
                                     ])
 
     return '<p>"Of course I can make you a {config.garment.name}, Citizen {config.protagonist.name}," ' \
-           'said {config.seamstress.name},{adv_phrase}. ' \
-           '"But would you mind doing me a favour?</p>'.format(**vars())
+           'said {config.seamstress.name},{adv_phrase}. </p>'.format(**vars())
 
 
 def wild_goose_chase(config):
@@ -57,7 +56,7 @@ def wild_goose_chase(config):
     else:
         indexical = 'these'
     reason = random.choice(doodad.reasons)
-    sentence = '<p>Could you take these {indexical} {doodad.name} to {errand_receiver.name}? {reason}" </p>\n'.format(**vars())
+    sentence = '<p>"But would you mind doing me a favour? Could you take these {indexical} {doodad.name} to {errand_receiver.name}? {reason}" </p>\n'.format(**vars())
 
     i = 1
     while errand_receiver != config.seamstress:
@@ -70,7 +69,7 @@ def wild_goose_chase(config):
                                     , 'They chatted to one another as they took the'
                                   ])
         additional_sentence = '<p>"{affirmation}," said {speaker.name}.</p> <p>{movement} {doodad.name} to ' \
-                              '{errand_receiver.name}. {errand_receiver.comment}</p>\n'.format(
+                              '{errand_receiver.name}.{errand_receiver.comment}</p>\n'.format(
             **vars())
         errand_sender = errand_receiver
         errand_receiver = goose_people[i]

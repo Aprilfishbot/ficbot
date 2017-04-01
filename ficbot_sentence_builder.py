@@ -29,7 +29,7 @@ def describe_surroundings(time, place):
     Fact(time.isoformat(), current_weather.name, 'was')
     is_it_ended_yet = random.random()
     description_sentence = '{}'.format(description)
-    while is_it_ended_yet<0.6:
+    while is_it_ended_yet<0.7:
         description_sentence = '%s; %s' % (description_sentence, further_description(time, place))
         is_it_ended_yet = random.random()
     return '{description_sentence}.'.format(**vars())

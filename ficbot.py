@@ -26,7 +26,7 @@ def garment_story(config):
     want = garment_wanted(config, current_time)
     order = garment_ordering(config)
     collect = garment_collection(config)
-    return Markup("{want} {order} {collect}".format(**vars()))
+    return Markup("{want}<br />{order}<br />{collect}".format(**vars()))
 
 
 """
